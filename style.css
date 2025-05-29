@@ -14,44 +14,38 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: top;
-    background-color: rgb(255, 250, 240);
+    background-color: blanchedalmond;
     padding: 20px;
     border-radius: 8px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-    margin: 10px;
+    margin-top: 25px;
+    margin-bottom: 10px;
+    margin-inline: 200px;
+    border: 1px solid black;
 }
 
 h1 {
     color: rgb(34, 34, 34);
 }
 
-nav {
-    background-color: blanchedalmond;
-    padding: 10px 20px;
-    border-radius: 8px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-}
 
 nav a {
-    margin: 0 15px; /* Space between links */
+    margin: 0 15px;
     text-decoration: none;
-    color: #333; /* Link color */
-    font-weight: bold; /* Make links bold */
+    color: #333;
+    font-weight: lighter;
     transition: color 0.3s;
 }
 
-nav a:hover {
-    color: burlywood;
+.button {
+    display: inline-block;
+    padding: 8px 16px;
+    border-radius: 8px;
+    background-color: blanchedalmond;
+    transition: background-color 0.3s, color 0.3s;
+    border: 1px solid black;
 }
 
-/* Optional: Responsive styles */
-@media (max-width: 600px) {
-    nav {
-        text-align: center; /* Center align links on small screens */
-    }
-
-    nav a {
-        display: block; /* Stack links vertically */
-        margin: 10px 0; /* Space between stacked links */
-    }
+.button:hover {
+    background-color: seagreen;
+    color: blanchedalmond;
 }
