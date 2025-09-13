@@ -10,30 +10,32 @@ body {
 
 }
 
-.content {
+main {
     flex-grow: 1;
     display: flex;
     flex-direction: column;
     justify-content: top;
     background-color: blanchedalmond;
-    padding: 20px;
+    padding: 10px;
     border-radius: 24px;
-    margin: 25px auto 10px auto;
-    width: 80%;
-    max-width: 900px;
+    margin: 25px auto 25px auto;
+    width: 90%;
+    max-width: 1100px;
     border: 1px solid black;
-    text-align: left;
 }
 
-.content_text {
-    text-align: left;
-    margin: 10px 20px;
+.navset {
+    text-align: center;
 }
 
-h1 {
-    color: rgb(34, 34, 34);
+.content{
+    text-align: center;
+    margin: 10px 130px;
 }
 
+h1, p {
+    color: rgb(34, 34, 34); 
+}
 
 nav a {
     margin: 0 15px;
@@ -55,4 +57,23 @@ nav a {
 .button:hover {
     background-color: seagreen;
     color: blanchedalmond;
+}
+
+
+.image_frame {
+    width: 200px; 
+    height: 200px;
+    border-radius: 50%;
+    border: 1px solid black;
+    overflow: hidden; 
+    display: flex; 
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+}
+
+.image_frame img {
+    width: 100%; 
+    height: auto; 
+    object-fit: cover; 
 }
